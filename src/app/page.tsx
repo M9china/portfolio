@@ -1,4 +1,5 @@
 import { CTA, FeaturedProjects, Hero, TechStack } from "../components";
+import { Footer } from "../components/Footer";
 
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <FeaturedProjects/>
         <TechStack/>
         <CTA/>
+        <Footer/>
       </main>
     </div>
   );

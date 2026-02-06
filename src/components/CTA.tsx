@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const CTA = () => {
   return (
-    <section className="py-24 flex flex-col items-center text-center gap-6">
+    <section className="py-24 w-full flex flex-col items-center text-center gap-6">
       <h2 className="text-4xl font-bold">Have a project in mind?</h2>
 
       <p className="text-muted-foreground max-w-xl">
