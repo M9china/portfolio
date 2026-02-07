@@ -13,7 +13,10 @@ export const NavBar = () => {
   return (
     <>
       {/* Mobile Menu Dialog */}
-      <header className="sm:py-2 px-4 fixed border-b border-gray-200 top-0 sm:w-full w-screen">
+      <header className=" sm:py-2 px-4 fixed top-0 w-screen sm:w-full
+  border-b
+  bg-white dark:bg-[#020617]
+  border-gray-200 dark:border-gray-800">
         <Dialog
           open={open}
           onClose={setOpen}
@@ -26,7 +29,8 @@ export const NavBar = () => {
           <div className="fixed inset-0 z-40 flex">
             <DialogPanel
               transition
-              className="relative flex w-1/2 max-w-xs transform flex-col overflow-y-auto bg-[#001A4B] pb-12 shadow-xl transition duration-300 ease-in-out data-[closed]:-translate-x-full"
+              className="relative flex w-1/2 max-w-xs transform bg-[#001A4B] dark:bg-[#020617]
+    text-white dark:text-gray-200 flex-col overflow-y-auto bg-[#001A4B] pb-12 shadow-xl transition duration-300 ease-in-out data-[closed]:-translate-x-full"
             >
               <div className="flex px-4 pb-2 pt-5">
                 <button
@@ -63,8 +67,8 @@ export const NavBar = () => {
                   alt="zembelani logo"
                   height={1500}
                   width={1500}
-                  src="/logo/logo_fav001.png"
-                  className="h-[4.5rem] sm:h-[5rem] w-auto border rounded"
+                  src="/fix.png"
+                  className="h-[3.5rem] sm:h-[5rem] rounded-full w-[3.5rem] sm:w-[5rem] object-cover"
                 />
               </Link>
             </div>
@@ -89,7 +93,7 @@ export const NavBar = () => {
                 onClick={() => setOpen(true)}
                 className="relative block sm:hidden rounded-md font-semibold lg:hidden"
               >
-                <Bars3Icon className="h-7 w-7" />
+                <Bars3Icon className="h-7 w-7 text-[#001A4B] dark:text-gray-200" />
               </button>
             </div>
           </div>

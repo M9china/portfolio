@@ -1,4 +1,4 @@
-import { CTA, FeaturedProjects, Footer, Hero, NavBar, TechStack } from "../components";
+import { CTA, FeaturedProjects, Footer, Hero, NavBar, TechStack } from "@/components";
 
 
 export default function Home() {

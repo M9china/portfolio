@@ -8,7 +8,7 @@ export const Footer = () => {
      
       <div className="border-gray-100 text-center">
         <p className="text-sm ">
-          © {new Date().getFullYear()} Nqobile Mvundlela. All rights reserved.
+          © {new Date().getFullYear()} Mvundlela Nqobile. All rights reserved.
         </p>
       </div>
     </footer>
