@@ -1,5 +1,5 @@
 "use client";
-import { RxMagnifyingGlass } from "react-icons/rx";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
@@ -12,9 +12,8 @@ export const NavBar = () => {
 
   return (
     <>
-
       {/* Mobile Menu Dialog */}
-      <header className="sm:py-2 fixed bg-white top-0 sm:w-full w-screen">
+      <header className="sm:py-2 px-4 fixed border-b border-gray-200 top-0 sm:w-full w-screen">
         <Dialog
           open={open}
           onClose={setOpen}
@@ -34,7 +33,7 @@ export const NavBar = () => {
                   aria-label="Close menu"
                   type="button"
                   onClick={() => setOpen(false)}
-                  className="relative -m-2 inline-flex items-center justify-center rounded-md p-2 text-white"
+                  className="relative -m-2 inline-flex items-center justify-center rounded-md p-2"
                 >
                   <XMarkIcon aria-hidden="true" className="h-6 w-6" />
                 </button>
@@ -65,14 +64,13 @@ export const NavBar = () => {
                   height={1500}
                   width={1500}
                   src="/logo/logo_fav001.png"
-                  className="h-[4.5rem] sm:h-[5rem] w-auto"
+                  className="h-[4.5rem] sm:h-[5rem] w-auto border rounded"
                 />
               </Link>
             </div>
 
             <div className="ml-auto mr-4 flex items-center">
               <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6"></div>
-              <span aria-hidden="true" className="h-6 w-px bg-gray-400" />
 
               {/* {NavStatic.map((item, name) => (
                   <Link
@@ -85,12 +83,11 @@ export const NavBar = () => {
                 ))} */}
             </div>
             <div className="flex sm:hidden items-center space-x-4">
-              <RxMagnifyingGlass className=" text-white size-7 cursor-pointer" />
               <button
                 aria-label="Open menu"
                 type="button"
                 onClick={() => setOpen(true)}
-                className="relative block sm:hidden rounded-md bg-white font-semibold text-white lg:hidden"
+                className="relative block sm:hidden rounded-md font-semibold lg:hidden"
               >
                 <Bars3Icon className="h-7 w-7" />
               </button>
