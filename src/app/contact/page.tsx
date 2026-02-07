@@ -14,14 +14,20 @@ export default function ContactPage() {
     setError(null);
     setSuccess(null);
 
-    const formData = new FormData(e.currentTarget);
+    // Cast to HTMLFormElement to safely use `.reset()`
+    const form = e.currentTarget as HTMLFormElement;
+    const formData = new FormData(form);
 
     try {
       await submitContact(formData);
       setSuccess("Your message has been sent! 🎉");
-      e.currentTarget.reset();
+      form.reset(); // <- safe now
     } catch (e: unknown) {
-      setError((e as Error).message || "Something went wrong.");
+      if (e instanceof Error) {
+        setError(e.message);
+      } else {
+        setError(String(e));
+      }
     } finally {
       setLoading(false);
     }
@@ -29,9 +35,7 @@ export default function ContactPage() {
 
   return (
     <section className="max-w-xl mx-auto py-24 px-4">
-      <h2 className="text-3xl font-bold mb-6 text-center">
-        Contact Me
-      </h2>
+      <h2 className="text-3xl font-bold mb-6 text-center">Contact Me</h2>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
