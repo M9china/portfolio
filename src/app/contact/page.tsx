@@ -38,7 +38,7 @@ export default function ContactPage() {
 
   return (
     <section className="max-w-xl mx-auto py-24 px-4 flex flex-col gap-8">
-      <h2 className="text-3xl font-bold text-center">Contact Me</h2>
+      <h2 className="text-3xl font-bold text-[#c9d1d9] text-center">Contact Me</h2>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
