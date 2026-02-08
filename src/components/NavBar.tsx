@@ -63,13 +63,7 @@ export const NavBar = () => {
             {/* Logo */}
             <div className="flex space-x-4 items-center lg:ml-0">
               <Link href="/">
-                <Image
-                  alt="zembelani logo"
-                  height={1500}
-                  width={1500}
-                  src="/fix.png"
-                  className="h-[3.5rem] sm:h-[5rem] rounded-full w-[3.5rem] sm:w-[5rem] object-cover"
-                />
+                <h1 className="text-lg font-bold text-[#001A4B] dark:text-white">Mvundlela Nqobile</h1>
               </Link>
             </div>
 
