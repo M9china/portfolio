@@ -11,11 +11,12 @@ export const projectData: ProjectDTO[] = [
   },
   {
     id: 2,
-    title: "Wits Induction Gamification",
+    title: "Zembelani Transport & Projects",
     description:
-      "A mobile application designed to help users track their health and fitness goals, providing personalized workout plans, nutrition advice, and progress monitoring.",
-    techStack: ["Next.js", "TypeScript", "Prisma", "Node.js"],
-    imageUrl: "/images/healthtrack.png",
+      `A professional business website built for a company operating in the transportation and construction sector.
+The site presents the company’s services, projects, and capabilities with a clear structure.`,
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
+    imageUrl: "/zembelani.png",
   },
   {
     id: 3,

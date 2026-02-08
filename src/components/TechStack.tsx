@@ -2,25 +2,35 @@
 export const TechStack = () => {
   return (
     <section className="flex flex-col gap-8 pt-12">
-      <h2 className="text-3xl text-[#c9d1d9] font-semibold">Tech I Work With</h2>
+      <h2 className="text-3xl text-[#c9d1d9] font-semibold">
+        Tech I Work With
+      </h2>
 
       <div className="flex flex-wrap gap-4 text-[#c9d1d9] text-sm">
         {[
           "Next.js",
           "TypeScript",
-          "Prisma",
-          "PostgreSQL",
-          "Tailwind CSS",
-          "PostgreSQL",
-          "Node.js",
-          "React",
-          "MYSQL",
-          "MongoDB",
           "JavaScript",
-           "Python",
+          "HTML 5",
+          "Tailwind CSS",
+
+          "CSS3",
+          "Node.js",
+          "REST APIs",
+          "PostgreSQL",
+          "MySQL",
+          "MongoDB",
+
+          "Python",
           "Docker",
+          "Git",
+          "Nginx",
+          "Linux",
         ].map((tech) => (
-          <span key={tech} className="px-4 py-2 border dark:border-[#30363d] rounded-full">
+          <span
+            key={tech}
+            className="px-4 py-2 border dark:border-[#30363d] rounded-full"
+          >
             {tech}
           </span>
         ))}
