@@ -9,9 +9,6 @@ export const FeaturedProjects = () => {
 
       <div className="grid md:grid-cols-2 gap-8">
         <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
       </div>
     </section>
   )
