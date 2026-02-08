@@ -15,8 +15,8 @@ export const NavBar = () => {
       <header
         className=" sm:py-2 px-4 fixed top-0 w-screen sm:w-full
   border-b
-  bg-white dark:bg-[#0d1117]
-  border-gray-200 dark:border-gray-800"
+  bg-[#0d1117]
+   border-[#30363d] z-50"
       >
         <Dialog
           open={open}
@@ -64,7 +64,7 @@ export const NavBar = () => {
             {/* Logo */}
             <div className="flex space-x-4 items-center lg:ml-0">
               <Link href="/">
-                <h1 className="text-md font-bold text-[#001A4B] dark:text-[#c9d1d9]">
+                <h1 className="text-md font-bold text-[#c9d1d9]">
                   Mvundlela Nqobile
                 </h1>
               </Link>
@@ -90,7 +90,7 @@ export const NavBar = () => {
                 onClick={() => setOpen(true)}
                 className="relative block sm:hidden rounded-md font-semibold lg:hidden"
               >
-                <Bars3Icon className="h-7 w-7 text-[#001A4B] dark:text-gray-200" />
+                <Bars3Icon className="h-7 w-7 text-gray-200" />
               </button>
             </div>
           </div>

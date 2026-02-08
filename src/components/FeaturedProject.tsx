@@ -3,7 +3,7 @@ import { ProjectCard } from "./ProjectCard"
 export const FeaturedProjects = () => {
   return (
     <section className="flex flex-col gap-12">
-      <h2 className="text-3xl text-[#001A4B] dark:text-white pt-[3rem] font-semibold">
+      <h2 className="text-3xl text-[#c9d1d9] pt-[3rem] font-semibold">
         Featured Projects
       </h2>
 

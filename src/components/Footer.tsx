@@ -3,11 +3,11 @@ export const Footer = () => {
   return (
     <footer
       aria-labelledby="footer"
-      className="pt-8 border-t w-full border-gray-200"
+      className="pt-8 border-t w-full border-[#30363d]"
     >
      
-      <div className="border-gray-100 text-center">
-        <p className="text-sm ">
+      <div className="text-center">
+        <p className="text-sm text-[#c9d1d9]">
           © {new Date().getFullYear()} Mvundlela Nqobile. All rights reserved.
         </p>
       </div>

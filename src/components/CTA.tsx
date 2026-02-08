@@ -3,13 +3,13 @@ import Link from "next/link";
 export const CTA = () => {
   return (
     <section className="py-24 w-full flex flex-col items-center text-center gap-6">
-      <h2 className="text-3xl text-[#001A4B] dark:text-white font-bold">Have a project in mind?</h2>
+      <h2 className="text-3xl text-[#c9d1d9] font-bold">Have a project in mind?</h2>
 
-      <p className="text-muted-foreground py-4 max-w-xl">
+      <p className="text-[#c9d1d9] py-4 max-w-xl">
         {`Let’s build something clean, fast, and scalable together.`}
       </p>
 
-      <Link href="/contact" className="primary-btn border bg-[#22C55E] text-white py-3 px-3 rounded-4xl">
+      <Link href="/contact" className="primary-btn border bg-[#22C55E] text-white py-3 px-3 rounded-2xl">
         Start a project
       </Link>
 
