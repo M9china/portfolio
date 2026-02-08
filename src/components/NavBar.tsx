@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
@@ -13,10 +12,12 @@ export const NavBar = () => {
   return (
     <>
       {/* Mobile Menu Dialog */}
-      <header className=" sm:py-2 px-4 fixed top-0 w-screen sm:w-full
+      <header
+        className=" sm:py-2 px-4 fixed top-0 w-screen sm:w-full
   border-b
-  bg-white dark:bg-[#020617]
-  border-gray-200 dark:border-gray-800">
+  bg-white dark:bg-[#0d1117]
+  border-gray-200 dark:border-gray-800"
+      >
         <Dialog
           open={open}
           onClose={setOpen}
@@ -63,7 +64,9 @@ export const NavBar = () => {
             {/* Logo */}
             <div className="flex space-x-4 items-center lg:ml-0">
               <Link href="/">
-                <h1 className="text-lg font-bold text-[#001A4B] dark:text-white">Mvundlela Nqobile</h1>
+                <h1 className="text-md font-bold text-[#001A4B] dark:text-[#c9d1d9]">
+                  Mvundlela Nqobile
+                </h1>
               </Link>
             </div>
 

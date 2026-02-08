@@ -20,7 +20,7 @@ export const TechStack = () => {
            "Python",
           "Docker",
         ].map((tech) => (
-          <span key={tech} className="px-4 py-2 border rounded-full">
+          <span key={tech} className="px-4 py-2 border dark:border-[#30363d] rounded-full">
             {tech}
           </span>
         ))}
