@@ -1,5 +1,6 @@
 "use server";
 
+export const runtime = "nodejs";
 import {pool} from "@/lib/db";
 import { z } from "zod";
 
