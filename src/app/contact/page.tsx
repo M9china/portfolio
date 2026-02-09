@@ -1,5 +1,6 @@
 "use client";
 
+export const runtime = "nodejs";
 import { useState, FormEvent } from "react";
 import { submitContact } from "./actions";
 
