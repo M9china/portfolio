@@ -13,7 +13,7 @@ export const ProjectCard = () => {
           <Link
             href={project.projectUrl}
             target="_blank"
-            className="relative h-48 w-full"
+            className=""
           >
             <Image
               src={project.imageUrl}
