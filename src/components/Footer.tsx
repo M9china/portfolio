@@ -3,7 +3,7 @@ export const Footer = () => {
   return (
     <footer
       aria-labelledby="footer"
-      className="pt-8 border-t w-full border-[#30363d]"
+      className="pt-8 border-t w-full border-[#30363d] bg-[#0d1117]"
     >
      
       <div className="text-center pb-4">

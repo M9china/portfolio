@@ -23,7 +23,7 @@ export const ProjectCard = () => {
               className="h-48  w-auto object-cover rounded-xl"
             />
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 mt-2">
               <h3 className="text-xl font-semibold text-[#c9d1d9]">
                 {project.title}
               </h3>
