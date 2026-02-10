@@ -13,7 +13,7 @@ export const NavBar = () => {
     <>
       {/* Mobile Menu Dialog */}
       <header
-        className=" sm:py-2 px-4 fixed top-0 w-screen sm:w-full 
+        className=" sm:py-2 px-4 fixed top-0 w-screen sm:w-full
   border-b
   bg-[#0d1117]
    border-[#30363d] z-50"
