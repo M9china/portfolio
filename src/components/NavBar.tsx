@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-// import { NavStatic } from "./NavStatic";
+import { navItems } from "./navbar/navStatic";
 
 export const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -43,17 +43,17 @@ export const NavBar = () => {
                   <XMarkIcon aria-hidden="true" className="h-6 w-6" />
                 </button>
               </div>
-              {/* <div className="space-y-6 border-t border-white px-4 py-6">
-                {NavStatic.map((item, name) => (
+              <div className="space-y-6 border-t border-white px-4 py-6">
+                {navItems.map((item) => (
                   <Link
-                    key={name}
-                    href={item.href}
-                    className="-m-2 block p-2 font-semibold text-white"
+                    key={item.id}
+                    href={item.url}
+                    className="-m-2 block p-2 font-semibold text-[#c9d1d9] hover:bg-[#30363d] rounded-md"
                   >
-                    {item.title}
+                    {item.name}
                   </Link>
                 ))}
-              </div> */}
+              </div>
             </DialogPanel>
           </div>
         </Dialog>
