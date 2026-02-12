@@ -38,7 +38,7 @@ export default function ContactPage() {
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
 
   return (
-    <section className="max-w-xl mx-auto py-24 px-4 flex flex-col gap-8">
+    <section className="max-w-xl mx-auto py-24 bg-[#0d1117] px-4 flex flex-col gap-8">
       <h2 className="text-3xl font-bold text-[#c9d1d9] text-center">Contact Me</h2>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -46,26 +46,26 @@ export default function ContactPage() {
           type="text"
           name="name"
           placeholder="Your Name"
-          className="border rounded-md p-3 dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+          className="border rounded-md p-3 bg-gray-300"
           required
         />
         <input
           type="email"
           name="email"
           placeholder="Your Email"
-          className="border rounded-md p-3 dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+          className="border rounded-md p-3 bg-gray-300"
           required
         />
         <textarea
           name="message"
           placeholder="Your Message"
-          className="border rounded-md p-3 h-32 dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+          className="border rounded-md p-3 h-32 bg-gray-300"
           required
         />
 
         <button
           type="submit"
-          className="bg-black text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 disabled:opacity-50"
+          className="bg-gray-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 disabled:opacity-50"
           disabled={loading}
         >
           {loading ? "Sending..." : "Send Message"}
