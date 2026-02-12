@@ -46,20 +46,20 @@ export default function ContactPage() {
           type="text"
           name="name"
           placeholder="Your Name"
-          className="border rounded-md p-3 bg-gray-800"
+          className="border rounded-md p-3 bg-gray-800 text-gray-400"
           required
         />
         <input
           type="email"
           name="email"
           placeholder="Your Email"
-          className="border rounded-md p-3 bg-gray-800"
+          className="border rounded-md p-3 bg-gray-800 text-gray-400"
           required
         />
         <textarea
           name="message"
           placeholder="Your Message"
-          className="border rounded-md p-3 h-32 bg-gray-800"
+          className="border rounded-md p-3 h-32 bg-gray-800 text-gray-400"
           required
         />
 
