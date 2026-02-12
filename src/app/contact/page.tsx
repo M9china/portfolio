@@ -46,26 +46,26 @@ export default function ContactPage() {
           type="text"
           name="name"
           placeholder="Your Name"
-          className="border rounded-md p-3 bg-gray-300"
+          className="border rounded-md p-3 bg-gray-800"
           required
         />
         <input
           type="email"
           name="email"
           placeholder="Your Email"
-          className="border rounded-md p-3 bg-gray-300"
+          className="border rounded-md p-3 bg-gray-800"
           required
         />
         <textarea
           name="message"
           placeholder="Your Message"
-          className="border rounded-md p-3 h-32 bg-gray-300"
+          className="border rounded-md p-3 h-32 bg-gray-800"
           required
         />
 
         <button
           type="submit"
-          className="bg-gray-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 disabled:opacity-50"
+          className="bg-gray-800 text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 disabled:opacity-50"
           disabled={loading}
         >
           {loading ? "Sending..." : "Send Message"}
